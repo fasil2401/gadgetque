@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gadgetque/view/entry_page/entry_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'view/entry_pages/entry_screen/screen_entry.dart';
+
 
 void main() {
   runApp(const GadgetQue());
@@ -10,9 +12,10 @@ class GadgetQue extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       home: ScreenEntry(),
+    theme: ThemeData(fontFamily: GoogleFonts.aBeeZee().fontFamily,),
     );
   }
 }
